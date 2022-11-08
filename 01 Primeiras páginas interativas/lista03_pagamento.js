@@ -7,3 +7,23 @@ Cógido condição de pagamento:
 3 - Em duas vezes, preço normal da etiqueta
 4 - Acima de duas vezes, preço normal da etiqueta mais juros de 10% */
 
+const valorEtiqueta = 100
+const formaPagamento = 4
+let valorFinal = 0
+
+console.log(`Valor da etiqueta R$${valorEtiqueta.toFixed(2)}`)
+
+switch (formaPagamento) {
+    case 1: valorFinal = valorEtiqueta * 0.9
+            console.log(`Valor final no débito é R$${valorFinal.toFixed(2)}`)
+            break
+    case 2: valorFinal = valorEtiqueta * 0.85
+            console.log(`Valor final no dinheiro/PIX é R$${valorFinal.toFixed(2)}`)
+            break
+    case 3: console.log(`Valor final no crédito em até 2x é R$${valorEtiqueta.toFixed(2)}`)
+            break
+    case 4: valorFinal = valorEtiqueta * 1.1
+            console.log(`Valor final no crédito em 3x ou mais é R$${valorFinal.toFixed(2)}`)
+            break
+    default: console.log(':..Opção de pagamento não é válida..:')
+}
