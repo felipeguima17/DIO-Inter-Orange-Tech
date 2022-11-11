@@ -14,3 +14,9 @@
  *             2x9 = 18
  *             2x10 = 20 */
 
+const { gets, print } = require('./funcoes-auxiliares')
+
+for (let i = 1; i <= 10; i++) {
+    const tabuada = gets()
+    print(`${tabuada} * ${i} = ${tabuada * i}`)
+}

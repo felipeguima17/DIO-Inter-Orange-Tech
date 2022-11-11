@@ -11,3 +11,17 @@
  *         12
  *     Saída:
  *         Números Pares: 10, 12 */
+
+const { gets, print } = require('./funcoes-auxiliares')
+
+const tamanhoLista = gets()
+const listaPar = []
+
+for (let i = 0; i < tamanhoLista; i++) {
+    const numero = gets()
+    if (numero % 2 == 0) {
+        listaPar.push(numero)
+    }
+}
+
+print(`Números pares: ${listaPar}`)
