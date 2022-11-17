@@ -74,6 +74,10 @@
     background-color: #F9AEC7;
 }
 
+.ice {
+    background-color: rgb(104, 222, 238);
+}
+
 .pokemon {
     display: flex;
     flex-direction: column;
